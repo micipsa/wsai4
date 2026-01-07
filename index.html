@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Todo</title>
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="style.css">
+    <!-- Exemple de police gamer -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <header class="app-header">
+            <div class="logo">
+                <span class="logo-badge">XP</span>
+                <h1>Gamer Todo</h1>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Basculer le thème">
+                ☾
+            </button>
+        </header>
+
+        <main>
+            <section class="todo-panel">
+                <h2>Quêtes du jour</h2>
+                <form id="todo-form" autocomplete="off">
+                    <input type="text" id="todo-input" placeholder="Nouvelle quête..." maxlength="80" />
+                    <button type="submit" class="btn-primary">Ajouter</button>
+                </form>
+
+                <ul id="todo-list" class="todo-list">
+                    <!-- Tâches injectées en JS -->
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
